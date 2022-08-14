@@ -1,12 +1,14 @@
+import {Button, TextField} from '@mui/material';
+import {LoginWrapper} from './Login.styled'
+
+
 export function Login() {
     return (
-      <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', flexDirection: 'column', background: 'grey'}}>
-            <label htmlFor="fname">Login</label>
-            <input type="text" id="fname" name="fname"/>
-            <label htmlFor="fname">Password</label>
-            <input type="text" id="fname" name="fname"/>
-         <button>Log in</button>
-      </div>
+      <LoginWrapper>
+            <TextField label="Login" id="Login" color='info' />
+            <TextField label="Password" id="Password" color='info' />
+            <Button variant="contained">Log in</Button>
+       </LoginWrapper>
     );
   }
   
