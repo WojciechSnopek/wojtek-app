@@ -5,9 +5,9 @@ import {LoginWrapper} from './Login.styled'
 export function Login() {
     return (
       <LoginWrapper>
-            <TextField label="Login" id="Login" color='info' />
-            <TextField label="Password" id="Password" color='info' />
-            <Button variant="contained">Log in</Button>
+            <TextField label="Login" id="Login" color='success' />
+            <TextField label="Password" id="Password" type={'password'} color='success' />
+            <Button variant="contained" size='large' color='success'>Log in</Button>
        </LoginWrapper>
     );
   }
